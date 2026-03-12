@@ -8,10 +8,9 @@
 </head>
 <body>
     <div class="container">
+        <div class="page-indicator">Page 3 of 3</div>
         <h1>Checkout</h1>
-        <div id="orderSummary">
-            <!-- summary gets filled by script -->
-        </div>
+        <div id="orderSummary"></div>
         <form id="paymentForm">
             <label for="cardNumber">Card Number:</label>
             <input type="text" id="cardNumber" required>
@@ -21,6 +20,9 @@
             <input type="text" id="cvv" required>
             <button type="submit">Pay Now</button>
         </form>
+        <div class="nav-buttons">
+            <button class="nav-btn back-btn" onclick="goToPage('delivery.html')">← Back</button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

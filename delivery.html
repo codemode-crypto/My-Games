@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delivery App - New Order</title>
+    <title>Delivery App - Create Delivery</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
+        <div class="page-indicator">Page 2 of 3</div>
         <h1>Create Delivery</h1>
         <form id="deliveryForm">
             <label for="start">Start Destination:</label>
@@ -16,8 +17,11 @@
             <input type="text" id="dropoff" required>
             <label for="description">Package Description:</label>
             <textarea id="description" rows="4"></textarea>
-            <button type="submit">Continue to Checkout</button>
         </form>
+        <div class="nav-buttons">
+            <button class="nav-btn back-btn" onclick="goToPage('index.html')">← Back</button>
+            <button class="nav-btn forward-btn" onclick="saveAndNext()">Next →</button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
